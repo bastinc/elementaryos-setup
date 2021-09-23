@@ -60,7 +60,7 @@ NOTE : The PAM stack is by design a serialised authentication, so it is not poss
  the same time. See man page [pam_fprintd(8) — libpam-fprintd — Debian unstable — Debian Manpages](https://manpages.debian.org/unstable/libpam-fprintd/pam_fprintd.8.en.html)
 
 For graphic apps and terminal
-)
+
 In */etc/pam.d/common-auth* add at the beginning of the file
 
 ```
