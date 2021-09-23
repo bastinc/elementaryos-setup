@@ -1,5 +1,21 @@
 # elementaryos-setup
 
+## Optimize laptop battery life
+
+Install TLP
+
+```
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt update
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
+```
+Custom config for Thinkpad (see [tlp website](https://linrunner.de/tlp/installation/ubuntu.html#thinkpads-only))
+
+```
+sudo apt install  tp-smapi-dkms acpi-call-dkms
+```
+
 ## Using a fingerprint reader
 
 ### Check if you  see your fingerprint reader
