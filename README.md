@@ -92,3 +92,57 @@ auth       sufficient pam_fprintd.so timeout=10
 ```
 
 At boot, you will still to unlock the gnome-keyring with your password.
+
+## Development
+
+### Handle multiple python version
+
+With [Pyenv](https://github.com/pyenv/pyenv)
+
+Get pyenv installer (to be able to update easily)
+
+```
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
+
+Restart your shell so the path changes take effect:
+
+```
+exec $SHELL
+```
+
+To update
+
+```
+pyenv update
+```
+
+Dependencies to install a python version
+
+```
+sudo apt-get update; sudo apt-get install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+
+List python versions available
+
+```
+pyenv install --list
+```
+
+Install a particular version
+
+```
+pyenv install 3.7.8
+```
+
+List installed versions
+
+```
+pyenv versions
+```
+
+Change default global version
+
+```
+nano ~/.pyenv/version
+```
